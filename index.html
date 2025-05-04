@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>U.S. Homicide Dashboard</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    h1 {
+      color: #4c9aff;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>U.S. Homicide Dashboard</h1>
+
+  <div class="dashboard">
+    <!-- Line Chart Section -->
+    <div class="viz" id="barViz">
+      <h3 id="lineTitle">Total Homicides by Year</h3>
+      <label for="citySelect">Select City:</label>
+      <select id="citySelect"></select>
+      <svg id="barSVG" viewBox="0 0 400 400"></svg>
+    </div>
+
+    <!-- Bar Chart Section -->
+    <div class="viz" id="lineViz">
+      <h3 id="barTitle">Race-Based Homicides by Sex</h3>
+      <label for="raceSelect">Select Race:</label>
+      <select id="raceSelect"></select>
+      <svg id="lineSVG" viewBox="0 0 400 400"></svg>
+    </div>
+
+    <!-- Scatter Plot Section -->
+    <div class="viz" id="scatterViz">
+      <h3 id="scatterTitle">Spatial Distribution of Homicides</h3>
+      <svg id="scatterSVG" viewBox="0 0 400 400"></svg>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
