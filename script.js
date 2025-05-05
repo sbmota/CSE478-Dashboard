@@ -60,7 +60,7 @@ d3.csv("homicide-data.csv", d => {
   // LINE CHART
   // total homicides by year 
   function drawLineChart() {
-    d3.select("#lineTitle").text(`Total Homicides by Year in ${selectedCity}`);
+    d3.select("#lineTitle").text(`Total Homicides by in ${selectedCity}`);
     svgLine.selectAll("*").remove();
 
     // add d3 annotation for interactivity instructions
