@@ -43,4 +43,38 @@
   <script src="script.js"></script>
 </body>
 
-</html>
+</html><body>
+    <h1>U.S. Homicide Dashboard</h1>
+  
+    <div class="dashboard">
+      <!-- Top Row: Line + Bar -->
+      <div class="row">
+        <!-- Line Chart -->
+        <div class="viz" id="barViz">
+          <h3 id="lineTitle">Total Homicides by Year</h3>
+          <label for="citySelect">Select City:</label>
+          <select id="citySelect"></select>
+          <svg id="barSVG" viewBox="0 0 400 400"></svg>
+        </div>
+  
+        <!-- Bar Chart -->
+        <div class="viz" id="lineViz">
+          <h3 id="barTitle">Race-Based Homicides by Sex</h3>
+          <label for="raceSelect">Select Race:</label>
+          <select id="raceSelect"></select>
+          <svg id="lineSVG" viewBox="0 0 400 400"></svg>
+        </div>
+      </div>
+  
+      <!-- Bottom Row: Scatterplot Full Width -->
+      <div class="row">
+        <div class="viz full-width" id="scatterViz">
+          <h3 id="scatterTitle">Spatial Distribution of Homicides</h3>
+          <svg id="scatterSVG" viewBox="0 0 800 400"></svg>
+        </div>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  
