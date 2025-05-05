@@ -63,6 +63,15 @@ d3.csv("homicide-data.csv", d => {
     d3.select("#lineTitle").text(`Total Homicides by Year in ${selectedCity}`);
     svgLine.selectAll("*").remove();
 
+    // add d3 annotation for interactivity instructions
+    svgLine.append("text")
+      .attr("x", width / 2)
+      .attr("y", -20)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#777")
+      .style("font-size", "13px")
+      .text("(Click a point to explore that year's data)");
+    
     const filtered = data.filter(d => d.city === selectedCity && d.year);
     if (!filtered.length) {
       svgLine.append("text")
