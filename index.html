@@ -14,32 +14,33 @@
 </head>
 
 <body>
-    <h1>U.S. Homicide Dashboard</h1>
-  
-    <div class="dashboard">
-      <!-- Line Chart Section -->
-      <div class="viz" id="barViz">
-        <h3 id="lineTitle">Total Homicides by Year</h3>
-        <label for="citySelect">Select City:</label>
-        <select id="citySelect"></select>
-        <svg id="barSVG" viewBox="0 0 400 400"></svg>
-      </div>
-  
-      <!-- Scatter Plot Section -->
-      <div class="viz" id="scatterViz">
-        <h3 id="scatterTitle">Spatial Distribution of Homicides</h3>
-        <svg id="scatterSVG" viewBox="0 0 400 400"></svg>
-      </div>
-  
-      <!-- Bar Chart Section -->
-      <div class="viz" id="lineViz">
-        <h3 id="barTitle">Race-Based Homicides by Sex</h3>
-        <label for="raceSelect">Select Race:</label>
-        <select id="raceSelect"></select>
-        <svg id="lineSVG" viewBox="0 0 400 400"></svg>
-      </div>
+  <h1>U.S. Homicide Dashboard</h1>
+
+  <div class="dashboard">
+    <!-- Line Chart Section -->
+    <div class="viz" id="barViz">
+      <h3 id="lineTitle">Total Homicides by Year</h3>
+      <label for="citySelect">Select City:</label>
+      <select id="citySelect"></select>
+      <svg id="barSVG" viewBox="0 0 600 600"></svg>
     </div>
-  
-    <script src="script.js"></script>
-  </body>  
+
+    <!-- Bar Chart Section -->
+    <div class="viz" id="lineViz">
+      <h3 id="barTitle">Race-Based Homicides by Sex</h3>
+      <label for="raceSelect">Select Race:</label>
+      <select id="raceSelect"></select>
+      <svg id="lineSVG" viewBox="0 0 600 600"></svg>
+    </div>
+
+    <!-- Scatter Plot Section -->
+    <div class="viz" id="scatterViz">
+      <h3 id="scatterTitle">Spatial Distribution of Homicides</h3>
+      <svg id="scatterSVG" viewBox="0 0 600 600"></svg>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
