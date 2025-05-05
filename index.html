@@ -17,26 +17,30 @@
   <h1>U.S. Homicide Dashboard</h1>
 
   <div class="dashboard">
-    <!-- Line Chart Section -->
-    <div class="viz" id="barViz">
-      <h3 id="lineTitle">Total Homicides by Year</h3>
-      <label for="citySelect">Select City:</label>
-      <select id="citySelect"></select>
-      <svg id="barSVG" viewBox="0 0 400 400"></svg>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; width: 100%;">
+      <!-- Line Chart Section -->
+      <div class="viz" id="barViz">
+        <h3 id="lineTitle">Total Homicides by Year</h3>
+        <label for="citySelect">Select City:</label>
+        <select id="citySelect"></select>
+        <svg id="barSVG" viewBox="0 0 400 400"></svg>
+      </div>
+
+      <!-- Bar Chart Section -->
+      <div class="viz" id="lineViz">
+        <h3 id="barTitle">Race-Based Homicides by Sex</h3>
+        <label for="raceSelect">Select Race:</label>
+        <select id="raceSelect"></select>
+        <svg id="lineSVG" viewBox="0 0 400 400"></svg>
+      </div>
     </div>
 
-    <!-- Bar Chart Section -->
-    <div class="viz" id="lineViz">
-      <h3 id="barTitle">Race-Based Homicides by Sex</h3>
-      <label for="raceSelect">Select Race:</label>
-      <select id="raceSelect"></select>
-      <svg id="lineSVG" viewBox="0 0 400 400"></svg>
-    </div>
-
-    <!-- Scatter Plot Section -->
-    <div class="viz" id="scatterViz">
-      <h3 id="scatterTitle">Spatial Distribution of Homicides</h3>
-      <svg id="scatterSVG" viewBox="0 0 400 400"></svg>
+    <!-- Second Row: Scatterplot -->
+    <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
+      <div class="viz" id="scatterViz">
+        <h3 id="scatterTitle">Spatial Distribution of Homicides</h3>
+        <svg id="scatterSVG" viewBox="0 0 400 400"></svg>
+      </div>
     </div>
   </div>
 
